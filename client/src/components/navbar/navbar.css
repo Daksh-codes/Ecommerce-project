@@ -1,0 +1,110 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem 5rem;
+    /* border-bottom: 1px solid gray; */
+    color: #396173;
+    position: relative;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 3rem;
+}
+
+.navbarIcons {
+    width: 16px;
+}
+
+.navbarItem {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.navbarItem:hover {
+    cursor: pointer;
+}
+
+.navbarItem h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.search {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: none;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 40vw;
+    padding: 0.35rem;
+    background-color: #f0f5ff;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+
+.search img {
+    margin: 8px 10px;
+}
+
+.login {
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+}
+
+.loginHover {
+    background-color: #1c41d6;
+    color: #ffffff;
+}
+
+.rotate {
+    /* transition: transform 0.51s ease-in-out; */
+    animation: rotateAnimation 0.5s;
+}
+
+@keyframes rotateAnimation {
+
+    /* 0% {
+      transform: rotate(0);
+    } */
+    100% {
+        transform: rotate(3.142rad);
+    }
+
+}
+
+.loginBox{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 3.7rem;
+    right: 7.6rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    z-index: 100;
+    width:13vw;
+    /* border: 1px solid gray; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* padding: 1rem; */
+}
+.loginLink {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #396173;
+    padding: 0.5rem;
+}
+.loginLink:hover{
+    background-color: #f7f7f7;
+}
