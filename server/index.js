@@ -16,7 +16,7 @@ const app = express();
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(cors({
-  origin : "https://ecommerce-project-fkcf.vercel.app/",    
+  origin : "https://cosmos-ashen.vercel.app/",    
   credentials: true
 }));
 app.use(express.json());
