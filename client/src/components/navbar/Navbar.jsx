@@ -72,7 +72,7 @@ function Navbar() {
         className="lg:inline-block font-Robotic text-xl hover:text-accent"
         to="/"
       >
-        Minimal
+        Cosmos
       </Link>
       <div className="hidden lg:flex items-center gap-8">
         <Link to="/products?category=Men" className="hover:text-accent">

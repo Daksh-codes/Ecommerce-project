@@ -43,7 +43,7 @@ function Footer() {
       </div>
       <div className="bg-[#9c9c9c] flex md:flex-row flex-col  gap-4 justify-between px-4 md:px-20 py-4 ">
         <div className="flex flex-col">
-          <h1 className="mb-2 text-2xl">Minimial</h1>
+          <h1 className="mb-2 text-2xl">Cosmos</h1>
           <h5  className="text-gray-800">Phone : 987654321 </h5>
           <h5  className="text-gray-800">Email : shopAtMinimal@gmail.com</h5>
         </div>
