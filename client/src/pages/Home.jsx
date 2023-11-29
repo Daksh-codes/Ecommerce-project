@@ -82,29 +82,29 @@ function Home() {
         <ProductCard
           data={{
             ...data[10],
-            imageUrl: `http://localhost:5000/uploads/${data[10].imageUrl[0]}`,
-            SImageUrl: `http://localhost:5000/uploads/${data[10].imageUrl[1]}`,
+            imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[10].imageUrl[0]}`,
+            SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[10].imageUrl[1]}`,
           }}
         />
         <ProductCard
           data={{
             ...data[15],
-            imageUrl: `http://localhost:5000/uploads/${data[15].imageUrl[0]}`,
-            SImageUrl: `http://localhost:5000/uploads/${data[15].imageUrl[1]}`,
+            imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[15].imageUrl[0]}`,
+            SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[15].imageUrl[1]}`,
           }}
         />
         <ProductCard
           data={{
             ...data[35],
-            imageUrl: `http://localhost:5000/uploads/${data[35].imageUrl[0]}`,
-            SImageUrl: `http://localhost:5000/uploads/${data[35].imageUrl[1]}`,
+            imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[35].imageUrl[0]}`,
+            SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[35].imageUrl[1]}`,
           }}
         />
         <ProductCard
           data={{
             ...data[19],
-            imageUrl: `http://localhost:5000/uploads/${data[19].imageUrl[0]}`,
-            SImageUrl: `http://localhost:5000/uploads/${data[19].imageUrl[1]}`,
+            imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[19].imageUrl[0]}`,
+            SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[19].imageUrl[1]}`,
           }}
         />
       </div>
@@ -116,29 +116,29 @@ function Home() {
           <ProductCard
             data={{
               ...data[17],
-              imageUrl: `http://localhost:5000/uploads/${data[17].imageUrl[0]}`,
-              SImageUrl: `http://localhost:5000/uploads/${data[17].imageUrl[1]}`,
+              imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[17].imageUrl[0]}`,
+              SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[17].imageUrl[1]}`,
             }}
           />
           <ProductCard
             data={{
               ...data[16],
-              imageUrl: `http://localhost:5000/uploads/${data[16].imageUrl[0]}`,
-              SImageUrl: `http://localhost:5000/uploads/${data[16].imageUrl[1]}`,
+              imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[16].imageUrl[0]}`,
+              SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[16].imageUrl[1]}`,
             }}
           />
           <ProductCard
             data={{
               ...data[31],
-              imageUrl: `http://localhost:5000/uploads/${data[31].imageUrl[0]}`,
-              SImageUrl: `http://localhost:5000/uploads/${data[31].imageUrl[1]}`,
+              imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[31].imageUrl[0]}`,
+              SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[31].imageUrl[1]}`,
             }}
           />
           <ProductCard
             data={{
               ...data[26],
-              imageUrl: `http://localhost:5000/uploads/${data[26].imageUrl[0]}`,
-              SImageUrl: `http://localhost:5000/uploads/${data[26].imageUrl[1]}`,
+              imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[26].imageUrl[0]}`,
+              SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${data[26].imageUrl[1]}`,
             }}
           />
         </div>

@@ -81,14 +81,14 @@ function IProductsPage() {
       />
       {selectedImage === "" ? (
         <img
-          src={`http://localhost:5000/uploads/${data.imageUrl[0]}`}
+          src={`https://cosmos-api-delta.vercel.app/uploads/${data.imageUrl[0]}`}
           alt="Product Image"
           className="object-contain  h-[70vh] w-[100%] lg:h-screen lg:w-max "
           //  style={{ width: "50vw", height: "100vh" }}
         />
       ) : (
         <img
-          src={`http://localhost:5000/uploads/${selectedImage}`}
+          src={`https://cosmos-api-delta.vercel.app/uploads/${selectedImage}`}
           alt="Product Image"
           className="object-contain h-[70vh] w-[100%] lg:h-screen lg:w-max "
           // style={{ width: "50vw", height: "100vh" }}
@@ -98,7 +98,7 @@ function IProductsPage() {
         <div className="flex gap-2 flex-row md:flex-col  md:mt-10">
           {imageList.map((img) => (
             <img
-              src={`http://localhost:5000/uploads/${img}`}
+              src={`https://cosmos-api-delta.vercel.app/uploads/${img}`}
               alt="Product Image"
               className={`object-contain w-12 h-12 lg:h-24 ${
                 selectedImage === img ? " border-cyan-600 border-2" : ""
