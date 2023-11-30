@@ -71,7 +71,7 @@ function IProductsPage() {
   }
   //console.log(data)
   return (
-    <div className="flex mx-4  gap-2 md:gap-14 flex-col lg:flex-row ">
+    <div className="flex mx-4 mb-20  gap-2 md:gap-14 flex-col lg:flex-row ">
       {/* product image */}
       <ToastContainer
         position="top-center"
@@ -81,14 +81,14 @@ function IProductsPage() {
       />
       {selectedImage === "" ? (
         <img
-          src={`https://cosmos-api-delta.vercel.app/uploads/${data.imageUrl[0]}`}
+          src={`https://cosmos-api2.onrender.com/uploads/${data.imageUrl[0]}`}
           alt="Product Image"
           className="object-contain  h-[70vh] w-[100%] lg:h-screen lg:w-max "
           //  style={{ width: "50vw", height: "100vh" }}
         />
       ) : (
         <img
-          src={`https://cosmos-api-delta.vercel.app/uploads/${selectedImage}`}
+          src={`https://cosmos-api2.onrender.com/uploads/${selectedImage}`}
           alt="Product Image"
           className="object-contain h-[70vh] w-[100%] lg:h-screen lg:w-max "
           // style={{ width: "50vw", height: "100vh" }}
@@ -98,7 +98,7 @@ function IProductsPage() {
         <div className="flex gap-2 flex-row md:flex-col  md:mt-10">
           {imageList.map((img) => (
             <img
-              src={`https://cosmos-api-delta.vercel.app/uploads/${img}`}
+              src={`https://cosmos-api2.onrender.com/uploads/${img}`}
               alt="Product Image"
               className={`object-contain w-12 h-12 lg:h-24 ${
                 selectedImage === img ? " border-cyan-600 border-2" : ""

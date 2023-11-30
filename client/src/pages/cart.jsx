@@ -92,7 +92,7 @@ function Cart() {
   if (isLoading) return <Loading />;
 
   return (
-    <div className="flex  flex-col lg:flex-row md:justify-between mx-4 lg:px-20 w-[90vw] h-screen">
+    <div className="flex mb-20  flex-col lg:flex-row md:justify-between mx-4 lg:px-20 w-[90vw] h-screen">
       <ToastContainer
         position="top-center"
         autoClose={1000}
@@ -115,7 +115,7 @@ function Cart() {
               <Link className="w-[50%] md:w-[30%]" to={`/products/${data._id}`}>
                 <div className="flex  gap-4 w-full  ">
                   <img
-                    src={`http://localhost:5000/uploads/${data.imageUrl[0]}`}
+                    src={`https://cosmos-api2.onrender.com/uploads/${data.imageUrl[0]}`}
                     alt={data.name}
                     className="w-20 h-25 object-contain"
                   />

@@ -239,8 +239,8 @@ function ProductPage() {
               key={product._id || product.name}
               data={{
                 ...product,
-                imageUrl: `https://cosmos-api-delta.vercel.app/uploads/${product.imageUrl[0]}`,
-                SImageUrl: `https://cosmos-api-delta.vercel.app/uploads/${product.imageUrl[1]}`,
+                imageUrl: `https://cosmos-api2.onrender.com/uploads/${product.imageUrl[0]}`,
+                SImageUrl: `https://cosmos-api2.onrender.com/uploads/${product.imageUrl[1]}`,
               }}
             />
           )})
