@@ -15,8 +15,9 @@ dotenv.config();
 const app = express();
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
+ const allowedOrigins = ["https://6568a4350843981326f6d72a--darling-torte-d1d4dd.netlify.app", "https://cosmos-ashen.vercel.app" , "http://localhost:5173"];
 app.use(cors({
-  origin : "https://6568a4350843981326f6d72a--darling-torte-d1d4dd.netlify.app",    
+  origin :allowedOrigins ,    
 }));
 app.use(express.json());
 app.use(bodyParser.json());
