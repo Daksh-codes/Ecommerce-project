@@ -1,7 +1,6 @@
 import Auth from "../middleware/authMiddleware.js"
 import express from "express"
 import {createOrder , deleteOrder , getOrdersByUser, payment  } from "../controller/orderController.js"
-import { verify } from "jsonwebtoken"
 const router = express.Router()
 
 router.post('/create' ,Auth , createOrder )

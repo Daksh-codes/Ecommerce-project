@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "server": "nodemon index.js",
-    "start" : "node server.js"
+    "start" : "node index.js"
   },
   "author": "Daksh",
   "license": "ISC",
