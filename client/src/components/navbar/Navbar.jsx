@@ -58,7 +58,7 @@ function Navbar() {
 
   function searchFunction() {
     console.log(searchText);
-    window.location.href = `/products?&search=${searchText}`;
+    window.location.href = `/products?search=${searchText}`;
   }
 
   const logoutUser = () => {
