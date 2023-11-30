@@ -16,7 +16,7 @@ const app = express();
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(cors({
-  origin : "https://6568a4350843981326f6d72a--darling-torte-d1d4dd.netlify.app/",    
+  origin : "https://6568a4350843981326f6d72a--darling-torte-d1d4dd.netlify.app",    
 }));
 app.use(express.json());
 app.use(bodyParser.json());
