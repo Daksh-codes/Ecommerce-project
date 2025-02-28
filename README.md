@@ -59,4 +59,7 @@ This is a full-stack e-commerce web application that allows users to browse prod
 ## Contributing
 Feel free to fork this repository and submit pull requests with improvements.
 
+![image](https://github.com/user-attachments/assets/d3e509c0-10c9-4c82-9490-d4c913ab5fcd)
+
+
 
