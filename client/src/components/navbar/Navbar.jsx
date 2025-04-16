@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import cartIcon from "../../assets/shopping-cart.svg";
 import searchIcon from "../../assets/search.svg";
+import logo from "../../assets/smallLogo1.jpg";
 import accountIcon from "../../assets/user.svg";
 import arrowdown from "../../assets/angle-small-down.svg";
 import useUserStore from "../../store.js";
@@ -69,10 +70,11 @@ function Navbar() {
   return (
     <nav className="text-black md:bg-bg shadow-stripe text-lg mb-8 px-4 py-4 items-center flex overflow-hidden w-full lg:px-20 justify-between">
       <Link
-        className="lg:inline-block font-Robotic text-xl hover:text-accent"
+        className="flex  font-Robotic text-xl hover:text-accent items-center gap-2"
         to="/"
       >
-        Cosmos
+        <img src={logo} alt="logo" className="w-4 h-4" />
+        <span>Minimal</span>
       </Link>
       <div className="hidden lg:flex items-center gap-8">
         <Link to="/products?category=Men" className="hover:text-accent">
@@ -82,13 +84,13 @@ function Navbar() {
           WOMEN
         </Link>
       </div>
-      <div className="hidden md:flex w-full lg:w-2/5 gap-2 bg-bg border-black border items-center justify-between rounded-md pl-4 py-1">
+      {/* <div className="hidden md:flex w-full lg:w-2/5 gap-2 bg-bg border-black border items-center justify-between rounded-md pl-4 py-1">
         <input
           ref={searchInputRef}
           type="text"
           name="search"
           className="border-none outline-none w-full text-md"
-          placeholder="Search minimal.com"
+          placeholder="Search Cosmos.com"
           required
           onChange={(e) => setSearchText(e.target.value)}
         />
@@ -98,7 +100,7 @@ function Navbar() {
         >
           Search
         </button>
-      </div>
+      </div> */}
       <div className="flex gap-[18px] md:gap-8">
         {!user ? (
           <Link className="" to="/register">
@@ -164,7 +166,7 @@ function Navbar() {
           </div>
           </div>
         )}
-        <div className="flex">
+        {/* <div className="flex">
           <img
             src={searchIcon}
             alt="search btn"
@@ -177,7 +179,7 @@ function Navbar() {
             searchFunction={searchFunction}
             setSearchText={setSearchText}
           />
-        )}
+        )} */}
         <Link className="flex gap-2 hover:text-accent" to="/cart">
           <img src={cartIcon} alt="" width="15px" height="15px" />
           <h3 className="hidden md:inline-block ">Cart</h3>

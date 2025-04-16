@@ -174,7 +174,11 @@ function IProductsPage() {
                 </button>
 
                 <button
-                  onClick={() => setQuantity((state) => state + 1)}
+                  onClick={() => {
+                    (quantity >= 7) ? 
+                      toast.error("Max order quantity is 7") :
+                    setQuantity((state) => state + 1)
+                  }}
                   className="px-2 py-1 bg-white border-2"
                 >
                   +

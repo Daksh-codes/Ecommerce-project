@@ -16,7 +16,7 @@ import OrderCancel from "./pages/OrderCancel";
 import axios from "axios";
 //import ProductPage from "./pages/ProductPage2";
 
-axios.defaults.baseURL = "https://ecommerce-project-ochre.vercel.app/";
+axios.defaults.baseURL = "http://localhost:5000/";
 
 function App() {
   return (

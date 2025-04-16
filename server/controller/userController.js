@@ -1,6 +1,6 @@
 import User from "../model/usermodel.js";
 import Product from "../model/productModel.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 // POST  /api/user/register

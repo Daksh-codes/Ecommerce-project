@@ -51,7 +51,7 @@ function Cart() {
           newProductData.push(newData);
         }
         setProductData(newProductData);
-        setIsLoading(false);
+
       };
       fetchProductData().then(setIsLoading(false));
     } catch (error) {
@@ -62,7 +62,7 @@ function Cart() {
   const totalMRP = () => {
     var total = 0;
     productdata.map((data) => {
-      total = total + data.price;
+      total = total + data.price * data.quantity;
     });
 
     return total;
@@ -86,10 +86,10 @@ function Cart() {
     navigate("/paymentPage");
   };
 
-  if (productdata.length == 0)
-    return <h1 className="text-center">Cart is empty</h1>;
 
   if (isLoading) return <Loading />;
+  else  if (productdata.length == 0)
+    return <h1 className="text-center h-screen">Cart is empty <br/> <Link to={"/"} className="underline">Continue shopping</Link> </h1>;
 
   return (
     <div className="flex mb-20  flex-col lg:flex-row md:justify-between mx-4 lg:px-20 w-[90vw] h-screen">
