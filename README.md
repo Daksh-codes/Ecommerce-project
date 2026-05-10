@@ -3,6 +3,10 @@
 ## Overview
 This is a full-stack e-commerce web application that allows users to browse products, add them to their cart, and proceed with checkout. The project includes authentication, product management, and order processing features.
 
+## Live Demo
+Link: https://cosmos-ashen.vercel.app/
+> Backend is hosted on Render's free tier, so the first request may take 1–2 minutes due to cold start.
+
 ## Features
 - User authentication (login/register)
 - Product browsing with categories
